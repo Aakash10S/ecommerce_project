@@ -1,0 +1,41 @@
+.dashboard-container{
+  text-align:center;
+  padding:40px;
+}
+
+h1{
+  margin-bottom:10px;
+}
+
+.card-container{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  margin-top:40px;
+}
+
+.dashboard-card{
+  width:200px;
+  padding:30px;
+  border-radius:12px;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.dashboard-card:hover{
+  transform:scale(1.05);
+}
+
+.products{
+  background:linear-gradient(135deg,#667eea,#764ba2);
+}
+
+.cart{
+  background:linear-gradient(135deg,#43cea2,#185a9d);
+}
+
+.orders{
+  background:linear-gradient(135deg,#ff7e5f,#feb47b);
+}

@@ -1,0 +1,48 @@
+<div class="auth-container">
+
+  <div class="auth-card">
+
+    <h2>Login</h2>
+
+    <form (ngSubmit)="login()">
+
+      <!-- Username -->
+      <div class="form-group">
+        <label>Username</label>
+        <input 
+          type="text"
+          name="username"
+          [(ngModel)]="loginData.username"
+          placeholder="Enter your username"
+          required
+        >
+      </div>
+
+      <!-- Password -->
+      <div class="form-group">
+        <label>Password</label>
+        <input 
+          type="password"
+          name="password"
+          [(ngModel)]="loginData.password"
+          placeholder="Enter your password"
+          required
+        >
+      </div>
+
+      <!-- Login Button -->
+      <button type="submit">
+        Login
+      </button>
+
+      <!-- Register Link -->
+      <p class="switch-text">
+        Don't have an account?
+        <a routerLink="/register">Register</a>
+      </p>
+
+    </form>
+
+  </div>
+
+</div>

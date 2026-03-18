@@ -1,0 +1,57 @@
+.order-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background: #f5f7fa;
+}
+
+.success-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 400px;
+}
+
+.success-card h2 {
+  color: #28a745;
+  margin-bottom: 20px;
+}
+
+.order-id {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.message {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.btn-back {
+  padding: 10px 20px;
+  background: #007bff;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.btn-back:hover {
+  background: #0056b3;
+}
+
+.btn-history{
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-color: 6px;
+  cursor: pointer;
+  margin-left: 15px;
+  border-radius: 6px;
+}

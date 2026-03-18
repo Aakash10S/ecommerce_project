@@ -1,0 +1,38 @@
+<h2>Products</h2>
+
+<div *ngIf="errorMessage" style="color:red; margin-top:10px;">
+  {{ errorMessage }}
+</div>
+<div class="search-box">
+  <input
+    type="text"
+    placeholder="Search products..."
+    [(ngModel)]="searchText"
+    >
+    <button (click)="searchProducts()"Search></button>
+</div>
+<div class="product-container" *ngIf="products.length > 0">
+
+  <div class="product-card" *ngFor="let product of products of filteredProducts">
+
+    <img [src]="product.imageUrl" class="product-img">
+
+    <h3>{{ product.name }}</h3>
+
+    <p>{{ product.description }}</p>
+
+    <p><strong>₹ {{ product.price }}</strong></p>
+
+    <p>Stock: {{ product.stock }}</p>
+
+    <button (click)="addToCart(product)">
+      Add to Cart 🛒
+    </button>
+
+  </div>
+
+</div>
+
+<div *ngIf="products.length === 0" style="margin-top:20px;">
+  
+</div>

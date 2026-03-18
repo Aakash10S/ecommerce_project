@@ -1,0 +1,17 @@
+<nav class="navbar">
+
+  <div class="logo">
+    ShopEase 🛍️
+  </div>
+
+  <div class="nav-links">
+    <a routerLink="/dashboard">Dashboard</a>
+    <a [routerLink]="['/products']">Products</a>
+    <a routerLink="/cart">Cart 🛒({{cartService.getCartCount()}})</a>
+    <a routerLink="/order-history">My Orders📦</a>
+    <span class="user-name"> {{username}}</span>
+  </div>
+
+  <button class="logout-btn" (click)="logout()">Logout</button>
+
+</nav>
