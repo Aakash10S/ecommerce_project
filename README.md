@@ -1,35 +1,69 @@
 # Ecommerce Full Stack Project
 
-## Project Overview
-This is a full stack ecommerce web application with frontend and backend integration.
+## Overview
+This is a full stack ecommerce web application developed using modern web technologies.  
+It allows users to browse products, add items to cart, and manage orders.
+
+---
 
 ## Tech Stack
-- Frontend: React / Angular
-- Backend: .NET Web API
-- Database: SQL Server
+### Frontend:
+- React / Angular
+- HTML, CSS, JavaScript
 
-## Features
-- User authentication (Login/Register)
-- Product listing
-- Add to cart
-- Order management
+### Backend:
+- .NET Web API
+
+### Database:
+- SQL Server
+
+---
+
+##  Features
+-  User Authentication (Login/Register)
+-  Product Listing
+-  Add to Cart
+-  Order Management
+-  Search & Filter (if implemented)
+
+---
 
 ## Project Structure
 Ecommerce-Project/
- ├── frontend/
- └── backend/
+ ├── frontend/   # UI (React/Angular)
+ └── backend/    # API (.NET)
 
-##  How to Run
+---
 
-### 1️ Frontend
-cd frontend
-npm install
-npm start
+##  How to Run the Project
 
-### 2️ Backend
-cd backend
-dotnet restore
-dotnet run
+### Frontend Setup
+cd frontend  
+npm install  
+npm start  
+
+---
+
+### Backend Setup
+cd backend  
+dotnet restore  
+dotnet run  
+
+---
+
+## Key Learnings
+- Built REST APIs using .NET
+- Integrated frontend with backend
+- Learned full stack development workflow
+- Improved debugging and problem-solving skills
+
+---
 
 ## Author
 Aakash.S
+
+---
+
+## Note
+node_modules, bin, obj folders are removed to reduce project size.  
+Run `npm install` and `dotnet restore` before starting the project.
